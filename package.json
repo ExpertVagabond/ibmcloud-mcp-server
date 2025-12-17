@@ -1,0 +1,27 @@
+{
+  "name": "@mcp/ibmcloud",
+  "version": "1.0.0",
+  "description": "MCP server for IBM Cloud CLI",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ibmcloud-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "watch": "tsc -w",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
